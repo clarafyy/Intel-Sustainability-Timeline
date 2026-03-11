@@ -1,3 +1,12 @@
+/*
+	Use Intel Clear when it is installed locally.
+	If it is not available, fall back to Intel's official public English web font.
+*/
+* {
+	font-family: "Intel Clear", "IntelOne Text", "intel-one-body-text", Helvetica, Arial, sans-serif;
+	color: #feffff;
+}
+
 .timeline-img {
 	width: 100px;
 	height: 100px;
@@ -23,7 +32,7 @@
 	min-width: 200px; /* Minimum width for horizontal scroll */
 	max-width: 220px; /* Prevent text from overflowing horizontally */
 	background: linear-gradient(135deg, #222a36 70%, #0071c5 100%); /* Match header dark blue */
-	border-radius: 12px;
+	border-radius: 0;
 	padding: 1rem;
 	box-shadow: 0 2px 12px rgba(0,0,0,0.10);
 	display: flex;
@@ -33,7 +42,7 @@
 	vertical-align: top;
 	position: relative;
 	overflow: hidden; /* Hide overflow text */
-	color: #e0f7fa;
+	color: #feffff;
 		border: 4px solid #0071c5;
 		transition: border-color 0.3s;
 }
@@ -44,7 +53,7 @@
 
 /* Timeline event headings */
 .timeline-item h2, .timeline-item h3 {
-	color: #e0f7fa;
+	color: #feffff;
 	font-weight: bold;
 	letter-spacing: 1px;
 	margin: 0.5rem 0 0.25rem 0;
@@ -53,7 +62,7 @@
 .timeline-desc {
 	display: none; /* Hidden until hovered */
 	background: rgba(34, 42, 54, 0.97); /* Match header dark blue */
-	color: #e0f7fa;
+	color: #feffff;
 	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.18);
 	padding: 0.5rem;
@@ -88,74 +97,96 @@
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.15rem;
-	color: #0071c5;
+	color: #feffff;
 	margin: 2rem 0 0 0;
 	letter-spacing: 1px;
-	font-family: "Share Tech", sans-serif;
-	background: linear-gradient(90deg, #222a36 0%, #0071c5 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
+	font-family: "Intel Clear", "IntelOne Text", "intel-one-body-text", Helvetica, Arial, sans-serif;
 }
 
 body {
-	font-family: "Share Tech", sans-serif;
+	font-family: "Intel Clear", "IntelOne Text", "intel-one-body-text", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
 body {
-	font-family: "Share Tech", sans-serif;
+	font-family: "Intel Clear", "IntelOne Text", "intel-one-body-text", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
 .share-tech-regular {
-	font-family: "Share Tech", sans-serif;
+	font-family: "Intel Clear", "IntelOne Text", "intel-one-body-text", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
 /* Use a fun, modern font for all text */
 body {
-	font-family: 'Montserrat', Arial, sans-serif;
-	background: #f6f8fa;
+	font-family: "Intel Clear", "IntelOne Text", "intel-one-body-text", Helvetica, Arial, sans-serif;
+	background: #000e28;
 	margin: 0;
-	color: #222;
+	color: #feffff;
 }
 
 /* Modern header bar styles */
 .header-bar {
-	background: linear-gradient(90deg, #222a36 60%, #0071c5 100%); /* Dark gradient for contrast */
+	background: #000e28;
 	padding: 0.5rem 0;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 	margin-bottom: 2rem;
+	margin-top: 1.5rem;
+	margin-left: 3rem;
 }
 .header-content {
 	display: flex;
 	align-items: center;
-	max-width: 900px;
-	margin: 0 auto;
+	justify-content: flex-start;
+	gap: 1rem;
+	width: 100%;
+	margin: 0;
 	padding: 0 1rem;
 }
 .header-logo {
-	height: 48px;
+	height: 20px;
 	width: auto;
-	margin-right: 1rem;
 }
-.header-titles h1 {
-	font-size: 2rem;
+
+.header-nav {
+	display: flex;
+	align-items: center;
+	gap: 1.75rem;
+	flex-wrap: wrap;
+	margin-left: 2.25rem;
+}
+
+.header-nav a {
+	color: #feffff;
+	text-decoration: none;
+	font-size: 0.86rem;
+	font-weight: 500;
+	padding: 0.15rem 0;
+}
+
+.header-nav a:hover {
+	color: #feffff;
+}
+
+.page-title-section {
+	text-align: center;
+	margin: 1rem 1.5rem 1.5rem 1.5rem;
+	color: #feffff;
+}
+
+.page-title-section h1 {
+	display: inline-block;
+	font-size: 2.8rem;
 	font-weight: 700;
-	margin: 0;
-	color: #fff;
+	line-height: 1.15;
 	letter-spacing: 1px;
-}
-.header-sub {
-	font-size: 1.1rem;
-	font-weight: 400;
 	margin: 0;
-	color: #e0f7fa;
-	letter-spacing: 2px;
+	padding: 1rem 1.75rem;
+	box-shadow: 0 0 30px 6px #2770a5;
 }
 
 /* Hero section styles */
@@ -163,14 +194,14 @@ body {
 	text-align: center;
 	margin-bottom: 2rem;
 	font-size: 1.2rem;
-	color: #0071c5;
+	color: #feffff;
 }
 
 /* Hide timeline description by default */
 .timeline-desc {
 	display: none; /* Hidden until hovered */
 	background: #fff;
-	color: #333;
+	color: #feffff;
 	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 	padding: 0.5rem;
@@ -189,18 +220,56 @@ body {
 	display: flex; /* Use flexbox for layout */
 	overflow-x: auto; /* Enable horizontal scroll by default */
 	gap: 1rem; /* Space between items */
-	padding: 1rem 0;
-	scrollbar-width: none; /* Firefox */
+	padding: 1rem;
+	margin: 0 1.5rem; /* Add a bit more space on both sides */
+	box-shadow: 0 0 30px 6px #2770a5;
+	border-radius: 0;
+	scrollbar-width: auto; /* Firefox */
+	scrollbar-color: #0071c5 #cfe8ff;
 }
 
 .timeline::-webkit-scrollbar {
-	display: none; /* Chrome, Safari, Opera */
+	height: 12px;
+}
+
+.timeline::-webkit-scrollbar-track {
+	background: #cfe8ff;
+	cursor: pointer;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+	background: #0071c5;
+	border-radius: 999px;
+	border: 2px solid #cfe8ff;
+	cursor: grab;
+}
+
+.timeline::-webkit-scrollbar-thumb:hover {
+	cursor: grab;
+}
+
+.timeline::-webkit-scrollbar-thumb:active {
+	cursor: grabbing;
+}
+
+@media (max-width: 600px) {
+	.header-content {
+		align-items: flex-start;
+	}
+
+	.header-nav {
+		gap: 0.75rem;
+	}
+
+	.header-nav a {
+		font-size: 0.78rem;
+	}
 }
 
 .timeline-desc {
 	display: none; /* Hidden until hovered */
 	background: #fff;
-	color: #333;
+	color: #feffff;
 	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 	padding: 0.5rem;
